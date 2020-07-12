@@ -10,7 +10,6 @@
 }
 body {
   font-family: tahoma, sans-serif;
-  overflow-x: hidden;
 }
 .container {
   width: 1180px;
@@ -598,7 +597,24 @@ body {
   }
   .welcome {
     height: 1000px;
+    .right-arrow {
+      right: 30px;
+    }
+    .left-arrow {
+      left: 30px;
+    }
+    .text {
+      h3 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
     .navbar {
+      h1 {
+        font-size: 25px;
+      }
       ul {
         display: none;
         position: fixed;
