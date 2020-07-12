@@ -87,6 +87,19 @@ body {
   &:after {
    @extend %overlay;
   }
+  .right-arrow, .left-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .right-arrow {
+    right: 50px;
+  }
+  .left-arrow {
+    left: 50px;
+  }
   .container {
     position: relative;
     z-index: 2;
