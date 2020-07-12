@@ -82,6 +82,7 @@ body {
 .welcome {
   color: #fff;
   background-image: url("../img/header.jpg");
+  background-size: cover;
   height: 800px;
   position: relative;
   &:after {
