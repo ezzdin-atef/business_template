@@ -10,6 +10,7 @@
 }
 body {
   font-family: tahoma, sans-serif;
+  overflow-x: hidden;
 }
 .container {
   width: 1180px;
@@ -596,6 +597,7 @@ body {
     display: inline-block;
   }
   .welcome {
+    height: 1000px;
     .navbar {
       ul {
         display: none;
