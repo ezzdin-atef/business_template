@@ -41,7 +41,8 @@ body {
   font-weight: bold;
 }
 
-.mobile-nav, .close {
+.mobile-nav,
+.close {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -102,9 +103,10 @@ body {
   height: 800px;
   position: relative;
   &:after {
-   @extend %overlay;
+    @extend %overlay;
   }
-  .right-arrow, .left-arrow {
+  .right-arrow,
+  .left-arrow {
     position: absolute;
     top: 50%;
     z-index: 3;
@@ -170,7 +172,7 @@ body {
     p {
       color: #ffffff7a;
       line-height: 2;
-      margin: 10px 0 40px 0
+      margin: 10px 0 40px 0;
     }
   }
 }
@@ -272,11 +274,13 @@ body {
   }
 }
 .solution {
-  background-image: url('../img/header.jpg');
+  background-image: url("../img/header.jpg");
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   &:after {
-   @extend %overlay;
-   opacity: 0.8;
+    @extend %overlay;
+    opacity: 0.8;
   }
   .content {
     position: relative;
@@ -350,7 +354,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 80px 0 ;
+    margin: 80px 0;
     .testimonial {
       flex-basis: 45%;
       background-color: #fff;
@@ -383,7 +387,8 @@ body {
     margin: 80px 0;
     flex-direction: column;
     justify-content: center;
-    input, textarea {
+    input,
+    textarea {
       max-width: 100%;
       margin: 20px;
       background-color: #fff;
@@ -483,7 +488,8 @@ body {
         }
       }
       form {
-        input, textarea {
+        input,
+        textarea {
           margin-bottom: 20px;
           border-radius: 25px;
           display: block;
@@ -538,10 +544,10 @@ body {
   }
   .services {
     .cards {
-       .card {
-         flex-basis: 45%;
-         margin: 10px 0;
-       }
+      .card {
+        flex-basis: 45%;
+        margin: 10px 0;
+      }
     }
   }
   .footer {
@@ -608,7 +614,8 @@ body {
         font-size: 20px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 180%;
+        word-wrap: break-word;
       }
     }
     .navbar {
@@ -643,9 +650,9 @@ body {
   }
   .services {
     .cards {
-       .card {
-         flex-basis: 100%;
-       }
+      .card {
+        flex-basis: 100%;
+      }
     }
   }
   .say {
@@ -679,4 +686,20 @@ body {
       }
     }
   }
+  .who {
+    .card {
+      img {
+        height: 350px;
+      }
+    }
+  }
 }
+// @media (max-width: 400px) {
+//   .welcome {
+//     .text {
+//       h2 {
+//         font-size: 20px;
+//       }
+//     }
+//   }
+// }
