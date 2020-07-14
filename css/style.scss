@@ -560,44 +560,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
-  .solution {
-    .content {
-      justify-content: center;
-      .left {
-        flex-basis: 100%;
-      }
-      .right {
-        flex-basis: 100%;
-        .box {
-          padding: 20px;
-        }
-      }
-    }
-  }
-  .who {
-    .card {
-      img {
-        width: 100%;
-      }
-      .text {
-        margin-top: 20px;
-        flex-basis: 100%;
-        .btn {
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 800px) {
-  // .top-header {
-  //   .info {
-  //     margin-bottom: 20px;
-  //     flex-basis: 100%;
-  //   }
-  // }
-
+@media (max-width: 991px) {
   .mobile-nav {
     display: inline-block;
   }
@@ -610,6 +573,8 @@ body {
       left: 30px;
     }
     .text {
+      margin-top: 14em;
+      text-align: center;
       h3 {
         font-size: 20px;
       }
@@ -648,10 +613,79 @@ body {
       }
     }
   }
+  .request {
+    .content {
+      text-align: center;
+      .contact-btn {
+        width: 100%;
+      }
+    }
+  }
+  .solution {
+    .content {
+      justify-content: center;
+      .left {
+        flex-basis: 100%;
+        text-align: center;
+      }
+      .right {
+        flex-basis: 100%;
+        .box {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .who {
+    .card {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .text {
+        text-align: center;
+        margin-top: 20px;
+        flex-basis: 100%;
+        .btn {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  // .top-header {
+  //   .info {
+  //     margin-bottom: 20px;
+  //     flex-basis: 100%;
+  //   }
+  // }
+
   .services {
     .cards {
       .card {
         flex-basis: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .text {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .solution {
+    .content {
+      .left {
+        text-align: center;
+      }
+      .right {
+        .box {
+          flex-basis: 100%;
+          padding: 25px 20px;
+        }
       }
     }
   }
@@ -682,14 +716,11 @@ body {
   .footer {
     .content {
       .column {
+        text-align: center;
         flex-basis: 100%;
-      }
-    }
-  }
-  .who {
-    .card {
-      img {
-        height: 350px;
+        .social {
+          justify-content: center;
+        }
       }
     }
   }

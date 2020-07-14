@@ -696,37 +696,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
-  .solution .content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .solution .content .left {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .solution .content .right {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .solution .content .right .box {
-    padding: 20px;
-  }
-  .who .card img {
-    width: 100%;
-  }
-  .who .card .text {
-    margin-top: 20px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .who .card .text .btn {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   .mobile-nav {
     display: inline-block;
   }
@@ -738,6 +708,10 @@ body {
   }
   .welcome .left-arrow {
     left: 30px;
+  }
+  .welcome .text {
+    margin-top: 14em;
+    text-align: center;
   }
   .welcome .text h3 {
     font-size: 20px;
@@ -779,9 +753,63 @@ body {
     color: #fff;
     border-color: #fff;
   }
+  .request .content {
+    text-align: center;
+  }
+  .request .content .contact-btn {
+    width: 100%;
+  }
+  .solution .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .solution .content .left {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .solution .content .right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .solution .content .right .box {
+    padding: 20px;
+  }
+  .who .card img {
+    width: 100%;
+    height: auto;
+  }
+  .who .card .text {
+    text-align: center;
+    margin-top: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .who .card .text .btn {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
   .services .cards .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .services .cards .card img {
+    width: 100%;
+    height: auto;
+  }
+  .services .cards .card .text {
+    text-align: center;
+  }
+  .solution .content .left {
+    text-align: center;
+  }
+  .solution .content .right .box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 25px 20px;
   }
   .say .testimonials .testimonial {
     -ms-flex-preferred-size: 100%;
@@ -800,11 +828,14 @@ body {
     margin: 10px 0;
   }
   .footer .content .column {
+    text-align: center;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .who .card img {
-    height: 350px;
+  .footer .content .column .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
