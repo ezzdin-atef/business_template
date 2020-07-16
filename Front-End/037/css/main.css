@@ -1,3 +1,7 @@
+:root {
+  --main: #3729b2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,208 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Fira Code, sans-serif;
   font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #fff), color-stop(35%, var(--main)));
+  background: linear-gradient(to right, #fff 35%, var(--main) 35%);
+}
+
+.ball {
+  position: absolute;
+  top: 5px;
+  left: 150px;
+  background-color: #0fd99b;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container {
+  width: 1400px;
+  height: 800px;
+  margin: 5em auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--main);
+  width: 30%;
+  padding: 40px;
+  color: #fff;
+}
+
+.menu .nav h1 {
+  padding: 15px;
+}
+
+.menu .nav ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.menu .nav ul li {
+  margin: 30px 0;
+  font-size: 17px;
+}
+
+.menu .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  color: #ffffffba;
+  font-weight: 100;
+  padding: 10px 20px;
+}
+
+.menu .nav ul li a.active {
+  background-color: #ffffff21;
+  border-radius: 5px;
+}
+
+.menu .info span:first-child {
+  color: #ffffff6b;
+}
+
+.menu .info span:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu .info span:last-child:after {
+  content: "-->";
+  margin: 0 10px;
+}
+
+.menu .info h2 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.menu .info p {
+  margin: 30px 0;
+  font-size: 14px;
+  color: #ffffffde;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  padding: 40px;
+}
+
+.contact .form {
+  width: 50%;
+}
+
+.contact .form h2 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.contact .form span {
+  width: 200px;
+  display: block;
+  color: #00000047;
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.contact .form form {
+  margin-top: 100px;
+}
+
+.contact .form form input,
+.contact .form form textarea {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+  font-size: 17px;
+  resize: none;
+  font-weight: 100;
+}
+
+.contact .form form input:focus,
+.contact .form form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.contact .form form button {
+  background-color: transparent;
+  border: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--main);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact .form form button:before {
+  content: "\f1d8";
+  display: inline-block;
+  margin: 0 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.contact .form form button:focus {
+  outline: none;
+}
+
+.contact .addr {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .addr h3 {
+  font-size: 20px;
+}
+
+.contact .addr p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 30px 0;
+}
+
+.contact .addr a {
+  font-size: 15px;
+  color: var(--main);
+  text-decoration: none;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
