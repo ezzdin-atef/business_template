@@ -9,16 +9,21 @@ body {
 }
 .card {
   margin: 30px auto;
+  position: relative;
+  width: 300px;
+  transition: all 0.4s ease;
+}
+.img {
   width: 300px;
   height: 300px;
   position: relative;
   transition: all 0.4s ease;
-  overflow-y: hidden;
+  overflow: hidden;
 }
-.card img {
+.img img {
   width: 100%;
 }
-.card > div {
+.card .text {
   position: absolute;
   padding: 10px;
   bottom: -25px;
@@ -29,10 +34,10 @@ body {
   z-index: 5;
   transition: all 0.4s ease;
 }
-.card > div p {
+.card .text p {
   color: red;
 }
-.card::after {
+.img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -46,7 +51,7 @@ body {
   z-index: 2;
   transition: all 0.4s ease;
 }
-.card:hover::after {
+.img:hover::after {
   left: 0%;
 }
 .card:hover {
