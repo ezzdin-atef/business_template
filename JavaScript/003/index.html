@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>003</title>
+  </head>
+  <body>
+    <h1>The Code</h1>
+    <!-- HTML generated using hilite.me -->
+    <div
+      style="
+        background: #ffffff;
+        overflow: auto;
+        width: auto;
+        border: solid gray;
+        border-width: 0.1em 0.1em 0.1em 0.8em;
+        padding: 0.2em 0.6em;
+      "
+    >
+      <pre
+        style="margin: 0; line-height: 125%;"
+      ><span style="color: #008800; font-weight: bold">const</span> myObject <span style="color: #333333">=</span> {
+    a<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1</span>,
+    b<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2</span>,
+    c<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">3</span>,
+  };
+  
+  <span style="color: #888888">// Write Code Here To Make Property C Value Not Changed</span>
+  
+  <span style="color: #007020">Object</span>.defineProperty(myObject, <span style="background-color: #fff0f0">&quot;c&quot;</span>, {
+    writable<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+  });
+  
+  myObject.c <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">100</span>;
+  console.log(myObject.c);
+  </pre>
+    </div>
+  </body>
+</html>
