@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  width: calc(100% - 70px);
+  margin-left: auto;
+}
+.btn {
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border: 1px solid #f7f7f7;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6px;
+}
+.primary {
+  background-color: #0D40C6;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #0D40C6;
+}
+.success {
+  background-color: #10D876 !important;
+  color: #fff !important;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #0D40C6;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 70px;
+  height: 100%;
+  left: 0;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  margin: 30px 0;
+}
+.navbar ul li a {
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.navbar ul li.active a {
+  background-color: #1652F0;
+}
+
+/* Header Styles */
+.main-header {
+  padding: 30px 20px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header h1 {
+  color: #0D40C6;
+}
+.main-header > div {
+  display: flex;
+}
+.main-header > div .currency {
+  margin: 0 20px;
+}
+.main-header > div .currency span {
+  padding: 10px 16px;
+  background-color: #EEF2FE;
+  border: 1px solid #f7f7f7;
+  margin: -3px;
+}
+.main-header > div .currency span:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #0D40C6;
+}
+.main-header > div .currency span:last-of-type {
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #9CADC5;
+}
+.main-header > div .user {
+  color: #9CADC5;
+}
+.main-header > div .user span {
+  background-color: #0D40C6;
+  padding: 10px 14px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+.main-header > div .user::after {
+  content: "\f0d7";
+  font-family: fontawesome;
+  margin: 0 3px;
+}
+.welcome {
+  font-weight: bold;
+  padding: 30px 20px;
+  color: #869AB8;
+}
+.welcome span {
+  color: #0D40C6;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+main > div {
+  flex-basis: 50%;
+  padding: 20px;
+}
+.exchange {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.exchange header {
+  display: flex;
+  justify-content: space-between;
+}
+.exchange header button {
+  flex-basis: 49%;
+}
+.exchange form label {
+  margin-top: 20px;
+  display: block;
+}
+.exchange form .form-group {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.exchange form select, 
+.exchange form input {
+  flex-basis: 50%;
+  background-color: #F2F6FE;
+  color: #5E7299;
+  padding: 15px 20px;
+  border: 0;
+}
+.exchange form .form-group span:first-of-type {
+  color: #9CADC5;
+}
+.exchange form input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.exchange footer {
+  color: #9CADC5;
+  /* justify-self: flex-end; */
+  margin-top: 100px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.details header {
+  display: flex;
+  justify-content: space-between;
+}
+.details header > div {
+  display: flex;
+}
+.details header > div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.details header > div h3,
+.details header > div h4 {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 9px 0;
+}
+.details header > div p {
+  color: #0D40C6;
+}
+.details main {
+  display: inline-block;
+  padding: 0;
+  /* margin: 20px 0; */
+}
+.details main > div {
+  padding: 0;
+}
+.details main .row {
+  display: flex;
+  margin: 20px 0;
+}
+.details main .row span {
+  width: 25%;
+}
+.details main .row p {
+  width: 75%;
+}
+.details main .row span,
+.details main .row p {
+  flex-basis: 50%;
+  background-color: #F2F6FE;
+  color: #5E7299;
+  padding: 20px 20px;
+  border: 0;
+  border-radius: 3px;
+}
+.blue p,
+.blue span {
+  color: #3267F2 !important;
+}
+.red {
+  color: #FF7B91 !important;
+}
