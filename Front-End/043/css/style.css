@@ -95,6 +95,28 @@ body {
 }
 .main-header > div .user {
   color: #9CADC5;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.main-header > div .user .dropdown {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  list-style: none;
+  padding: 8px 15px;
+  width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+.main-header > div .user .dropdown li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+.main-header > div .user .dropdown li:hover {
+  text-decoration: underline;
 }
 .main-header > div .user span {
   background-color: #0D40C6;
@@ -135,7 +157,6 @@ main > div {
 .exchange header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .exchange header button {
   flex-basis: 49%;
@@ -296,10 +317,6 @@ main > div {
   }
   .details header > div {
     margin: 20px 0;
-  }
-  .exchange header button {
-    flex-basis: 100%;
-    margin: 10px 0;
   }
 }
  
